@@ -1,16 +1,32 @@
+<!DOCTYPE html>
 <html>
+    <title>Any relevant title you want to give</title>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
+        Rate  <input type="range"  id="rate" min="minval" max="maxval" value="default_val"><span id="rate_val">
+        </span><span id="rate_val">
+            10.25%
+            </span> <br/>
+        No. of Years <input type="number"  id="years"><br/>
         Interest : <span id="result"></span><br>
 
-        <button onclick="compute()">Compute</button>
+        <button onclick="compute()">Compute intrest</button>
+        <span id="result">
+
+        </span>
+        <footer>
+
+        &#169; This Calculator belongs to --harvi sheth--
+
+
+</footer>
+    </div>
     </body>
 </html>
